@@ -1,0 +1,72 @@
+{
+  "app": {
+    "stage": "Stage 0 · Skeleton"
+  },
+  "topbar": {
+    "library": "Library",
+    "noProject": "No project open",
+    "search": "Search",
+    "history": "Versions",
+    "settings": "Settings",
+    "toggleBinder": "Show/hide project panel",
+    "toggleAi": "Show/hide AI panel",
+    "focusMode": "Distraction-free mode",
+    "comingSoon": "Coming in a later stage"
+  },
+  "modes": {
+    "label": "Work mode",
+    "write": "Write",
+    "develop": "Develop",
+    "world": "World",
+    "ai": "AI",
+    "stats": "Statistics"
+  },
+  "binder": {
+    "title": "Project",
+    "empty": "No project open yet. Library and projects arrive in stage 1.",
+    "screenplay": "Screenplay",
+    "development": "Development",
+    "characters": "Characters",
+    "locations": "Locations",
+    "timeline": "Timeline",
+    "research": "Research",
+    "notes": "Notes"
+  },
+  "editor": {
+    "previewLabel": "Preview · static",
+    "sample": {
+      "heading": "INT. PALACE – NIGHT",
+      "action": "Olga stands at the window, holding a letter she never dared to send.",
+      "character1": "OLGA",
+      "dialogue1": "You ask me to forget everything I was until this very moment.",
+      "character2": "KARL",
+      "dialogue2": "I ask you to become who you must be."
+    },
+    "hint": "The editor with screenplay elements arrives in stage 1."
+  },
+  "ai": {
+    "title": "AI assistance",
+    "empty": "AI roles and providers will be connected in stage 1.",
+    "inputPlaceholder": "Ask about the scene …"
+  },
+  "status": {
+    "page": "Page {{current}} of {{total}}",
+    "runtime": "≈ {{time}}",
+    "words": "{{count}} words",
+    "local": "Local",
+    "focusHint": "Esc leaves focus mode"
+  },
+  "settings": {
+    "title": "Quick settings",
+    "theme": "Colour scheme",
+    "themeSystem": "System",
+    "themePaper": "Paper",
+    "themeDark": "Dark",
+    "language": "Interface language"
+  },
+  "languages": {
+    "de": "Deutsch",
+    "en": "English",
+    "ru": "Русский"
+  }
+}

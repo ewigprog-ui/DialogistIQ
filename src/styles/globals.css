@@ -1,0 +1,94 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+@import "tailwindcss";
+
+/* Fonts are bundled locally (no network requests, PROJECT_BIBLE.md §2 p.10).
+   Licences are listed in src/assets/ASSETS.md. */
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/literata";
+@import "@fontsource/courier-prime/400.css";
+@import "@fontsource/courier-prime/400-italic.css";
+@import "@fontsource/courier-prime/700.css";
+/* Courier Prime has no Cyrillic. Cousine has the same 0.6em advance width,
+   so mixed Latin/Cyrillic screenplay text keeps the fixed pitch. */
+@import "@fontsource/cousine/400.css";
+@import "@fontsource/cousine/400-italic.css";
+@import "@fontsource/cousine/700.css";
+
+/* Fallback token values (paper theme). The active theme is applied at runtime
+   from src/theme/themes.ts, which is the single source of truth. */
+:root {
+  --app: #f2efe8;
+  --panel: #f2efe8;
+  --page: #faf8f3;
+  --hover: #e9e5dc;
+  --selected: #e2ddd1;
+  --line: #dedad0;
+  --ink: #2b2a27;
+  --ink-muted: #625e57;
+  --accent: #4e6582;
+  --selection: #d7dee8;
+}
+
+@theme inline {
+  --color-app: var(--app);
+  --color-panel: var(--panel);
+  --color-page: var(--page);
+  --color-hover: var(--hover);
+  --color-selected: var(--selected);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-selection: var(--selection);
+
+  --font-ui: "Inter Variable", system-ui, sans-serif;
+  --font-prose: "Literata Variable", Georgia, serif;
+  --font-script: "Courier Prime", "Cousine", "Courier New", monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--app);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* Desktop app: no rubber-band scrolling or accidental text selection in chrome. */
+    overscroll-behavior: none;
+    user-select: none;
+  }
+
+  ::selection {
+    background: var(--selection);
+  }
+
+  /* Visible keyboard focus everywhere (PROJECT_BIBLE.md §5.5, accessibility). */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Calm, thin scrollbars. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+}
+
+/* Short, functional motion only; none at all if the OS asks for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

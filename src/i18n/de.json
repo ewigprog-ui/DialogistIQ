@@ -1,0 +1,72 @@
+{
+  "app": {
+    "stage": "Stufe 0 · Grundgerüst"
+  },
+  "topbar": {
+    "library": "Bibliothek",
+    "noProject": "Kein Projekt geöffnet",
+    "search": "Suchen",
+    "history": "Versionen",
+    "settings": "Einstellungen",
+    "toggleBinder": "Projektleiste ein-/ausblenden",
+    "toggleAi": "KI-Leiste ein-/ausblenden",
+    "focusMode": "Ablenkungsfreier Modus",
+    "comingSoon": "Folgt in einer späteren Ausbaustufe"
+  },
+  "modes": {
+    "label": "Arbeitsmodus",
+    "write": "Schreiben",
+    "develop": "Entwickeln",
+    "world": "Welt",
+    "ai": "KI",
+    "stats": "Statistik"
+  },
+  "binder": {
+    "title": "Projekt",
+    "empty": "Noch kein Projekt geöffnet. Bibliothek und Projekte folgen in Stufe 1.",
+    "screenplay": "Drehbuch",
+    "development": "Entwicklung",
+    "characters": "Figuren",
+    "locations": "Schauplätze",
+    "timeline": "Zeitleiste",
+    "research": "Recherche",
+    "notes": "Notizen"
+  },
+  "editor": {
+    "previewLabel": "Vorschau · statisch",
+    "sample": {
+      "heading": "INT. PALAST – NACHT",
+      "action": "Olga steht am Fenster. In der Hand hält sie einen Brief, den sie nie abzuschicken wagte.",
+      "character1": "OLGA",
+      "dialogue1": "Sie bitten mich, alles zu vergessen, was ich bis zu diesem Augenblick war.",
+      "character2": "KARL",
+      "dialogue2": "Ich bitte Sie, die zu werden, die Sie sein müssen."
+    },
+    "hint": "Der Editor mit Drehbuchelementen folgt in Stufe 1."
+  },
+  "ai": {
+    "title": "KI-Assistenz",
+    "empty": "KI-Rollen und Anbieter werden in Stufe 1 angebunden.",
+    "inputPlaceholder": "Frage zur Szene stellen …"
+  },
+  "status": {
+    "page": "Seite {{current}} von {{total}}",
+    "runtime": "≈ {{time}}",
+    "words": "{{count}} Wörter",
+    "local": "Lokal",
+    "focusHint": "Esc beendet den Fokusmodus"
+  },
+  "settings": {
+    "title": "Schnelleinstellungen",
+    "theme": "Farbschema",
+    "themeSystem": "System",
+    "themePaper": "Papier",
+    "themeDark": "Dunkel",
+    "language": "Sprache der Oberfläche"
+  },
+  "languages": {
+    "de": "Deutsch",
+    "en": "English",
+    "ru": "Русский"
+  }
+}

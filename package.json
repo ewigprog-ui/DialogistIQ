@@ -1,0 +1,49 @@
+{
+  "name": "studio",
+  "private": true,
+  "version": "0.1.0",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "licenses:check": "node scripts/licenses.mjs check",
+    "licenses:notices": "node scripts/licenses.mjs notices",
+    "product:set-name": "node scripts/set-product-name.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/literata": "^5.3.0",
+    "@fontsource/courier-prime": "^5.3.0",
+    "@fontsource/cousine": "^5.3.0",
+    "@tauri-apps/api": "^2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "i18next": "^26.7.1",
+    "lucide-react": "^1.68.0",
+    "radix-ui": "^1.8.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^17.1.12",
+    "react-resizable-panels": "^4.18.0",
+    "tailwind-merge": "^3.7.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@tauri-apps/cli": "^2",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.4",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^5.1.0"
+  }
+}

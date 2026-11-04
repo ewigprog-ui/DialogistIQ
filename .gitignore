@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules
+dist
+dist-ssr
+src-tauri/target
+src-tauri/gen/schemas
+
+# Generated at build/release time by `pnpm licenses:notices` (large, ~700 KB)
+THIRD_PARTY_NOTICES.md
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local files
+*.local
+.env
+.env.*
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
